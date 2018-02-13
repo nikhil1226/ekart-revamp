@@ -1,0 +1,111 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	
+}
+.clear
+{
+	clear: both;
+}
+/*.container
+{
+	padding-right: 15px;
+    padding-left: 15px;
+    background: white;
+    margin: 0 auto;
+}*/
+
+.bg{
+    width: 100%;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#b5dde7, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b5dde7, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b5dde7, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b5dde7, #ffffff); /* Standard syntax (must be last) */
+}
+.discrip
+{
+
+text-align: center;
+}
+.discripimg
+{
+	
+padding-top: 30px;
+
+}
+
+.servicestext
+{
+font-size: 46px;
+font-family: sans-serif;
+color: #3e3d38;
+font-weight: bold;
+}
+
+.servicesdis
+{
+
+font-size: 20px;
+font-family: sans-serif;
+color: #3e3d38;
+padding-bottom: 120px;
+}
+.mainimage
+{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.box
+{
+float: left;
+text-align: center;
+padding-top: 20px;
+padding-right: 10px;
+}
+.pinkhover{
+	color: #535d60;
+    padding-top: 5px;
+}
+.pinkhover:hover {
+
+    color:#d846d6;
+}
+
+.maintext
+{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.1;
+    font-family: sans-serif;
+   }
+
+.description
+{
+	font-size:16px; 
+    line-height: 1.1;
+    font-family: sans-serif;
+    
+}
+
+@media (min-width: 992px){
+.box
+{
+    width: 25%;
+}
+}
+
+.promotion{
+	float: left;
+	padding: 10px;
+	padding-top: 20px;
+}
+
+.webimage{
+    width: 32px;
+}

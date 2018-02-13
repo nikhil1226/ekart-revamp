@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    box-model: border-box;
+}
+
+ .decorator{
+  color:white;
+  line-height:50px;
+  padding-left:20px;
+} 
+
+ .content{
+ height:80px;
+ }
+  /*.page{
+    padding-top: 5%;
+   }*/
+  
+.caption {
+    height: 200px;
+    overflow: hidden;
+}
+.caption h4 {
+   white-space: nowrap;
+   color: #d17581
+}
+.thumbnail img {
+    width: 100%;
+}
+.thumbnail {
+    padding: 0;
+}
+.ratings {
+   padding-right: 10px;
+   color: #d17581;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+ .link
+    {
+    padding:5px;
+    color:white;
+    border:none;
+    }
+    .clear{clear:both;}
+#slideshow{height:300px;width:800px;margin-left:40px;}
+#shop{
+margin-top:25px;
+margin-left:20px;
+}
+
+.wrapper{margin-left:90px;}
+.wrapper{margin-left:100px;}
+#contentimage{margin-left:300px;}
+.electronics{margin-top:20px}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+    color:black;
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+.btn-register {
+background-color: #1CB94E;
+outline: none;
+color: #fff;
+font-size: 12px;
+font-weight: normal;    
+border-color: #55acee;
+}
+.btn-register:hover,
+.btn-register:focus {
+    color: #fff;
+    background-color: #1CA347;
+    border-color: #1CA347;
+}
+
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.grad{
+background:-webkit-linear-gradient(lightblue,white);    
+background:-moz-linear-gradient(lightblue,white);                
+}
+.alignText{
+text-align:center;
+}
+
+.addHover:hover{
+color:magenta;
+}
+                
+ *{
+ padding:0px;
+ margin:0px;
+ }
+ 
+ .accessories{
+ padding-top:10px;
+ margin:auto;
+ } 
+  
+ .content{
+ height:100px;
+
+ }
+ 
+.style{
+font-size: 50px;
+color:black;
+}
+
+
+.on:hover{
+color:grey;
+
+}
+.glyphicon-heart{
+padding-left:20px;
+}
+.glyphicon-star{
+padding-left:8px;
+}
+.glyphicon-star-empty{
+padding:8px;
+}
+.glyphicon-user{
+padding-left:10px;
+}
+.glyphicon-road{
+padding-left:23px;
+}
+.glyphicon-cog{
+font-size:2.2em; 
+color:blue;
+}
+.addHover .glyphicon-globe{
+font-size:2.2em; 
+color:purple;
+}
+.addHover .glyphicon-edit{
+font-size:2.2em; 
+color:red;
+}
+.addHover .glyphicon-shopping-cart{
+font-size:2.2em;
+color:green;
+}
+.addHover .glyphicon-phone{
+font-size:2.2em; 
+color:aqua;
+}
+.phnCall .glyphicon-earphone{
+font-size:2.2em; color:blue;
+}
+.mailBox .glyphicon-envelope{
+font-size:2.2em; color:blue;
+}
+.locateMap .glyphicon-map-marker{
+font-size:2.2em; color:blue;
+}
+.conFooter  .glyphicon-lock{
+font-size:2em; color:lime;
+}
+.conFooter .glyphicon-ok {
+font-size:2em; color:orange;
+}
+.conFooter .glyphicon-download {
+font-size:2.2em; color:indigo;
+}
+.conFooter .retext{
+font-size:1.2em;
+font-weight: bold;
+
+}
+.footerMarquee img{
+width:220px;
+height:100px;
+}
+
+.aboutContent{
+padding-top:10px;
+}
+#logo_cart{
+margin-left:50px;
+font-size:2em;
+}
+#cart{
+padding:10px;}
+.phoeinix
+{
+text-align:center;
+}
+.master{margin-top:50px;}
+
+.border{
+border-bottom:1px solid grey;
+}
+
+
+.removeCart{
+margin-left:10px;
+margin-bottom:5px;
+}
+.topRow{
+margin-top:10px;
+}
+#cart_style{padding:10px;}

@@ -1,0 +1,212 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	
+}
+.clear
+{
+	clear: both;
+}
+.wrapper
+{
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background: white
+}
+.contactus
+{
+	display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+/*.container
+{
+margin-right: -15px;
+margin-left: -15px;
+}*/
+.leftdiv{
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.discription
+{
+	color: #42ac48;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	margin: 20px 0 10px;
+}
+
+
+@media (min-width: 992px){
+.gap {
+    width: 12.66666667%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+}
+
+@media (min-width: 992px){
+	.leftdiv  {
+	    width: 33.33333333%;
+	    position: relative;
+	    min-height: 1px;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    float: left;
+
+	}
+}
+.callusmain{
+	padding: 15px;
+    color: #0080c0;
+}
+
+.callussub
+{
+    font-size: 2.2em;
+    color: #0080c0;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+}
+.callussub:before {
+   content: url("../img/contactus/phone.png");
+}
+
+
+.mailusmain{
+	padding: 15px;
+    color: #0080c0;
+}
+
+.mailussub
+{
+    font-size: 2.2em;
+    color: #0080c0;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+}
+.mailussub:before {
+   content: url("../img/contactus/mail.png");
+}
+.phonenumb{
+	padding-top: 10px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+  .addressmain{
+	padding: 15px;
+    color: #0080c0;
+}
+.email{
+	padding-top: 10px;
+}
+
+.addresssub
+{
+    font-size: 2.2em;
+    color: #0080c0;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family:sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+}
+.addresssub:before {
+   content: url("../img/contactus/address.png");
+}  
+.addresstext
+{
+padding-top: 10px;
+margin-right: 150px;
+
+}
+
+.rightdiv{
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 70px;
+}
+@media (min-width: 992px){
+	.rightdiv  {
+	    width: 33.33333333%;
+	    float: left;
+
+	}
+}
+.table{
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+
+    
+}
+mark {
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+td{
+	font-size: 1.5em;
+	 
+}
+td:hover{
+	background-color:#d9ddd9;
+}
+
+
+.table {
+    border-spacing: 0;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+ 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}

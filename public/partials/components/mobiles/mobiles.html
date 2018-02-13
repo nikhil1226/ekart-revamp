@@ -1,0 +1,13 @@
+<div class="container">    
+    <h2>Mobile Phones</h2>                
+    <div class="row">
+        <div class="col-md-4" style="border: 1px solid #ccc; border-radius: 2px; padding: 10px; height: 100px" ng-repeat="mobile in mobileArr">
+            <p>{{mobile.mobileName}}</p>
+            <p style="display: inline; float: left">Rs.&nbsp;{{mobile.mobilePrice}}</p>
+            <button type="button" class="btn btn-default" style="float: right" ng-click="viewMobile(mobile)">See more...</button>
+            <!--<a ui-sref="viewMobile({name: mobile.mobileName})" class="pull-right">View</a>-->
+        </div>
+    </div>
+</div>
+<!--ng-show="state.current.name == 'mobiles'"-->
+

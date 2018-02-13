@@ -1,0 +1,90 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="home">Ekart</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="mobiles">Mobile Phones</a></li>
+            <li><a ui-sref="laptops">Laptops</a></li>
+            <li><a ui-sref="televisions">Televisions</a></li>
+            <li><a ui-sref="men">Men</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn" ng-click="showSignUpModal()" ng-show="!username">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Sign up
+                        </button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn" ng-click="showLoginModal()" ng-show="!username">
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;Log in
+                        </button>
+            </li>
+            <li>
+                <p class="navbar-text" ng-show="username">Hi, {{username}}</p>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary navbar-btn" ng-show="username" ng-click="logout()">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp;Log out
+                        </button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-default navbar-btn" ng-click="goToCart()">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;{{cartCount}}
+                        </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="signUpModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sign up</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" ng-model="contact.username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" ng-model="contact.password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password" ng-model="contact.confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-click="signUp()">
+                                Sign up
+                            </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="LoginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Log in</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="contact.email" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" ng-model="contact.password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-click="login()">
+                                Log in
+                            </button>
+                    <p style="color: red" ng-show="incorrect">Incorrect Username or Password.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

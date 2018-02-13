@@ -1,0 +1,16 @@
+<div class="container" ng-controller="viewMobileCtrl">    
+    <h2>Mobile Phones</h2>
+    <div class="row">
+        <div class="col-md-4" style="border: 1px solid #ccc; border-radius: 2px; padding: 10px;">
+            <p>{{mobileObj.mobileName}}</p>
+            <p>{{a}}</p>
+            <p style="display: inline; float: left">Rs.&nbsp;{{mobileObj.mobilePrice}}</p>
+            <button type="button" class="btn btn-primary" ng-show="showAddBtn" style="float: right" ng-click="addToCart(mobileObj)">Add to Cart</button>
+            <button type="button" class="btn btn-success" ng-hide="showAddBtn" style="float: right">Added to Cart</button>
+            <div ng-controller="childCtrl" style="clear: both; border: 1px solid #ccc; border-radius: 2px; padding: 10px;">
+                <p>childCtrl</p>
+                <input type="text" class="form-control" ng-model="enteredText" ng-change="changed()">
+            </div>
+        </div>
+    </div>
+</div>
