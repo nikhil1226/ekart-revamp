@@ -1,5 +1,0 @@
-1. Pluralsight courses.
-2. ng-book on Angular 5 (e-book).
-3. Official Documentation (angular.io).
-4. YouTube.
-5. Webex Recordings.
