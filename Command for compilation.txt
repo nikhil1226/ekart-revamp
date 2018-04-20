@@ -1,0 +1,5 @@
+npm run build
+npm run buildtest
+npm run buildset
+
+Required: Nodejs v6.11.1
