@@ -1,0 +1,56 @@
+Difference  between "div p" and "div > p"?
+
+Difference  between display: none and visibility: hidden?
+
+Difference  between display: inline and display: inline-block?
+
+Undefined and null are equal in value but different in type
+
+You can access object properties in two ways: objectName.propertyName    (or)    objectName["propertyName"]
+
+split() : If the separator is "", the returned array will be an array of single characters and If there is no separator, the returned array will contain the whole string in index [0]
+
+JSON names require double quotes. JavaScript names do not.
+
+Decorator adds meta data to the class.
+
+Hoisting - Only variable declarations are hoisted and not the assignments.
+
+var Vs let : hoisting Vs no hoisting  - function scoping Vs block scoping.
+
+Regular functions Vs Arrow functoions.
+
+Promises Vs Observables.
+- Promises are only called once and will return a single value. Vs - Observables return multiple values over time.
+- No Lazy loading. Vs - Lazy loading.
+- Not cancellable. Vs - Cancellable(unsubscribe()).
+
+Angular is 5X faster than AngularJS.
+
+Benefits of Angular Components :  - Reusable - Easily testable.
+
+Template-driven forms Vs Reactive forms.
+- Less control over validation logic. Vs - More control over validation logic (complex forms with custom validations).
+- Can't be unit tested. Vs - Can be unit tested. 
+- Form model is generated automatically. Vs - Form model is generated manually.
+
+@Component() decorator adds meta data to the class.
+
+for...of loop Vs for...in loop.
+object - index
+
+Benefits of Services: 
+- Can be easily shared across multiple components.
+- Can be easily mocked for testing purposes. 
+
+Decorators add meta data to the classes.
+
+What is Dependency Injection? 
+"Singleton(Single instance)" feature of Dependency Injection. Benefits of "Singleton" - data can be shared across multiple components.
+
+Services can be registered at any two levels (in providers: []): module level and component level. 
+
+*JavaScript Comparison Operators:
+- NaN is not equal to anything, including NaN.
+- Null and Undefined Types are strictly equal to themselves.
+
