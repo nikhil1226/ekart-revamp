@@ -1,0 +1,21 @@
+* Test drive the bike for changes made.
+
+* Check if the Engine Oil is refilled.
+
+* Check the Air Pressure in the tyres.
+
+* Check if the Brakes are too tight or too lose.
+
+* Check if the Air Filter is cleaned.
+
+* Check if the Carburetor is cleaned.
+
+* Check if the Spark Plug is cleaned.
+
+* Check if the Chain is properly lubricated.
+
+* Check if all the lights are working properly.
+
+* Check for oil leakage from the engine.
+
+* Battery charging.
