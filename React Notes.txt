@@ -1,0 +1,50 @@
+___________________________________________________________________________________________________________________________________________
+
+** Features of React **
+- Virtual DOM.
+- Server-side scripting.
+- One-way data binding.
+- JSX.
+
+___________________________________________________________________________________________________________________________________________
+
+** Limitations of React **
+
+- It's just a library, not a framework.
+___________________________________________________________________________________________________________________________________________
+
+** JSX **
+
+- Fullform: JavaScript Extension.
+- JavaScript that looks like HTML.
+- It's just HTML-like syntax. Syntactical sugar.
+- It's totally optional to use it.
+- Compiles down to JavaScript.
+
+___________________________________________________________________________________________________________________________________________
+
+** Life-cycle Hooks **
+
+
+- To prevent the re-rendering of child components, we can use shouldComponentUpdate() method.
+
+___________________________________________________________________________________________________________________________________________
+
+** Virtual DOM **
+
+- In general, updating DOM is expensive (time-taking).
+- Virtual DOM is a copy of Real DOM.
+- React doesn't update the Real DOM directly. First, it updates the Virtual DOM, then it makes the updates to the Real DOM all at once.
+- Updating Real DOM is slow.
+- AngularJS uses Dirty Checking (Digest Cycle), whereas ReactJS uses Observables.
+- Whenever setState() method is called on any component, ReactJS makes that component dirty and re-renders it.
+- Whenever setState() method is called, ReactJS creates the whole Virtual DOM from scratch (creating a whole tree is very fast). 
+- ReactJS maintains two virtual DOMs, one with the updated state Virtual DOM and other with the previous state Virtual DOM.
+- If the state of a component has changed, then ReactJS re-renders all the child components even if child components are not modified.
+- React uses BST for DOM tree traversal.
+* Reconciliation: It is the process to determine which parts of the Real DOM need to be updated.
+- ReactJS using diff algorithm compares both the Virtual DOMs to find the minimum number of steps to update the Real DOM.
+- Batch Update: During the event loop, there is exactly one time when the Real DOM is being painted.
+
+
+___________________________________________________________________________________________________________________________________________
