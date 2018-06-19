@@ -1,0 +1,84 @@
+** Angular **
+
+* Angular is 5x faster than AngularJS.
+___________________________________________________________________________________________________________________________________________
+
+** AngularJS vs. Angular **
+
+- Not mobile-oriented. - Mobile-oriented.
+- Controllers. - No Controllers (Angular is completely component-based).
+- Scope. - No Scope.
+
+___________________________________________________________________________________________________________________________________________
+
+
+* Benefits of Angular Services: 
+- Can be easily shared across multiple components.
+- Can be easily mocked for testing purposes. 
+
+Decorators add meta data to the classes.
+
+* What is Dependency Injection? 
+"Singleton(Single instance)" feature of Dependency Injection. Benefits of "Singleton" - data can be shared across multiple components.
+
+Services can be registered at any two levels (in providers: []): module level and component level. 
+
+___________________________________________________________________________________________________________________________________________
+
+** Promises Vs RxJS Observables **
+
+- Promises are only called once and will return a single value. 
+- Can't retry.
+- No Lazy loading. 
+- Not cancellable.
+
+vs.
+
+- Observables return multiple values (stream) over time.
+- Can retry using retry operator.
+- Lazy loading.
+- Cancellable using unsubscribe() method.
+
+
+* Caching in observables.
+
+___________________________________________________________________________________________________________________________________________
+
+* Benefits of Components:
+- Reusable.
+- Easily testable.
+
+Template-driven forms Vs Reactive forms.
+- Less control over validation logic. Vs - More control over validation logic (complex forms with custom validations).
+- Can't be unit tested. Vs - Can be unit tested. 
+- Form model is generated automatically. Vs - Form model is generated manually.
+
+@Component() decorator adds meta data to the class.
+
+___________________________________________________________________________________________________________________________________________
+
+* Constructor:
+
+* Constructors are used for initializing class members and also used for dependency injection. 
+
+___________________________________________________________________________________________________________________________________________
+
+** Life-cycle hooks in Angular **
+
+* ngOnInit() :
+- Initializations.
+- API calls.
+
+* ngOnChanges.
+ngDoCheck
+ngAfterContentInit
+ngAfterContentChecked
+ngAfterViewInit
+ngAfterViewChecked
+* ngOnDestroy().
+
+___________________________________________________________________________________________________________________________________________
+
+** Angular CLI **
+
+___________________________________________________________________________________________________________________________________________
