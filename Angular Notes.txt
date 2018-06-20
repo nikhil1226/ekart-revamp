@@ -1,13 +1,59 @@
 ** Angular **
 
-* Angular is 5x faster than AngularJS.
+* Angular 3?
+- To prevent the conflict with router package, Angular 3 was skipped (so that, all the packages will be aligned).
+
+- Two way data-binding using [( )]. Banana in a box.
+
+- Bootstrapping the application.
+___________________________________________________________________________________________________________________________________________
+
+** Angular 2 vs. Angular 4 **
+
+- The bundled file size has been reduced by 60%!
+* Integration of Angular Universal - Inclusion of separate "@angular/platform-server" package for server-side rendering. renderModuleFactory. 
+- Animations have got their own package.
+- <template> became <ng-template>.
+- *ngIf with else.
+- A new pipe called titlecase.
+- TypeScript 2.1 and 2.2 compatibility.
+
+___________________________________________________________________________________________________________________________________________
+
+** Advantages of TypeScript over JavaScript **
+
+- Type checking is possible (just like Java).
+- Errors can be caught at compile time.
+- Better intellisense in IDEs.
 ___________________________________________________________________________________________________________________________________________
 
 ** AngularJS vs. Angular **
 
-- Not mobile-oriented. - Mobile-oriented.
-- Controllers. - No Controllers (Angular is completely component-based).
-- Scope. - No Scope.
+- Angular is 5x faster than AngularJS.
+
+- No mobile support.
+- Controllers. 
+- Scope. 
+- Not SEO-friendly.
+- No Server-side rendering.
+
+vs.
+
+- Mobile support.
+- No Controllers (Angular is completely component-based).
+- No Scope.
+- SEO-friendly.
+- No Server-side rendering.
+
+__________________________________________________________________________________________________________________________________________
+
+* Server-side rendering:
+- Rendering DOM from server requests.
+- The HTML content of DOM will be stored in the server. And when the content is needed, browser will request the server.
+___________________________________________________________________________________________________________________________________________
+
+* Mobile support of Angular:
+- Angular has application layer and rendering layer. Based on the device, component will be rendered.
 
 ___________________________________________________________________________________________________________________________________________
 
@@ -16,12 +62,13 @@ ________________________________________________________________________________
 - Can be easily shared across multiple components.
 - Can be easily mocked for testing purposes. 
 
-Decorators add meta data to the classes.
+___________________________________________________________________________________________________________________________________________
 
-* What is Dependency Injection? 
-"Singleton(Single instance)" feature of Dependency Injection. Benefits of "Singleton" - data can be shared across multiple components.
+** Dependency Injection ** 
 
-Services can be registered at any two levels (in providers: []): module level and component level. 
+- A design pattern and mechanism for creating and delivering parts of an application (dependencies) to other parts of an application that require them. 
+
+* "Singleton(Single instance)" feature of Dependency Injection. Benefits of "Singleton" - data can be shared across multiple components.
 
 ___________________________________________________________________________________________________________________________________________
 
@@ -39,8 +86,13 @@ vs.
 - Lazy loading.
 - Cancellable using unsubscribe() method.
 
+* Observable
+- A producer of multiple values, which it pushes to subscribers.
+
 
 * Caching in observables.
+- We can use caching in order to cache the response in the memory and then, on the next subscription, instead of requesting the remote server again.
+* http://www.syntaxsuccess.com/viewarticle/caching-with-rxjs-observables-in-angular-2.0
 
 ___________________________________________________________________________________________________________________________________________
 
@@ -48,37 +100,192 @@ ________________________________________________________________________________
 - Reusable.
 - Easily testable.
 
-Template-driven forms Vs Reactive forms.
+___________________________________________________________________________________________________________________________________________
+
+** Template-driven forms Vs Reactive forms **
 - Less control over validation logic. Vs - More control over validation logic (complex forms with custom validations).
 - Can't be unit tested. Vs - Can be unit tested. 
 - Form model is generated automatically. Vs - Form model is generated manually.
-
-@Component() decorator adds meta data to the class.
-
-___________________________________________________________________________________________________________________________________________
-
-* Constructor:
-
-* Constructors are used for initializing class members and also used for dependency injection. 
 
 ___________________________________________________________________________________________________________________________________________
 
 ** Life-cycle hooks in Angular **
 
-* ngOnInit() :
-- Initializations.
-- API calls.
+* Sequence:
+- constructor() --> ngOnChanges() --> ngOnInit() --> ngDoCheck() --> ngAfterContentInit() --> ngAfterContentChecked() --> 	ngAfterViewInit() --> ngAfterViewChecked() --> ngOnDestroy().
 
-* ngOnChanges.
-ngDoCheck
-ngAfterContentInit
-ngAfterContentChecked
-ngAfterViewInit
-ngAfterViewChecked
-* ngOnDestroy().
+
+* constructor():
+- constructor is used for initializing class members and also used for dependency injection. 
+
+* ngOnChanges():
+- Implementing OnChanges interface is a must.
+
+* ngOnInit():
+- Implementing OnInit interface is a must.
+- Initializations.
+- API calls are placed in this method.
+
+* ngDoCheck():
+
+* ngAfterContentInit():
+
+* ngAfterContentChecked():
+
+* ngAfterViewInit():
+
+* ngAfterViewChecked():
+
+* ngOnDestroy():
+- This is the cleanup phase.
+- Gets executed just before the component gets removed from the DOM.
 
 ___________________________________________________________________________________________________________________________________________
 
 ** Angular CLI **
+
+- The Angular CLI is a command-line tool that can create a project, add files, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
+
+- We can create boilerplate code using Angular CLI.
+- Eg. ng generate directive directiveName.
+ 
+- ng install -g @angular/cli.
+- ng new myApp.
+- ng serve.
+
+___________________________________________________________________________________________________________________________________________
+
+* Differences between ActivatedRoute and RouterState.
+
+___________________________________________________________________________________________________________________________________________
+
+* There are three kinds of directives in Angular:
+1. Components - directives with templates.
+2. Attribute directives - change the appearance or behavior of DOM elements.
+3. Structural directives - change the DOM layout by adding and removing DOM elements.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** Structural Directives **
+
+- Structural directives are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements. Eg. *ngIf, *ngFor, ngSwitch, *ngSwitchCase, *ngSwitchDefault.
+- You can only apply one structural directive to a host element.
+- *ngIf vs. [style.display]="'none'".
+
+*ngFor:
+- Syntax: *ngFor="let hero of heroes".
+- The ngIf directive doesn't hide elements with CSS. It adds and removes them physically from the DOM.
+
+* ngSwitch:
+- <div [ngSwitch]="hero?.emotion">.
+- *ngSwitchCase="' '" and *ngSwitchDefault.
+
+___________________________________________________________________________________________________________________________________________
+
+** Attribute Directives **
+- Eg. ngStyle.
+ 
+___________________________________________________________________________________________________________________________________________
+
+** Interpolation:
+- {{ }} - Template Expression.
+
+** Property Binding:
+- [ ].
+
+** Event Binding:
+- ( ).
+
+___________________________________________________________________________________________________________________________________________
+
+* Decorators add meta data to the classes.
+
+** List of Decorators in Angular:
+
+* @NgModule.
+
+* @Directive.
+
+* @Component.
+
+* @Pipe.
+
+* @Input.
+
+* @Output.
+
+* @Injectable.
+
+* EventEmitter.
+
+___________________________________________________________________________________________________________________________________________
+
+** Mudules in Angular **
+
+
+
+___________________________________________________________________________________________________________________________________________
+
+** Communication between two components in Angular **
+
+- @Input, property binding.
+- @Output and EventEmitter.
+- BehaviorSubject.
+
+___________________________________________________________________________________________________________________________________________
+
+** Refs in Angular **
+
+___________________________________________________________________________________________________________________________________________
+
+* AOT Compiler.
+ 
+* JIT Compiler.
+
+* main.ts - The main entry point for your app. Compiles the application with the JIT compiler and bootstraps the application's root module (AppModule) to run in the browser.
+- platformBrowserDynamic().bootstrapModule(AppModule);
+
+
+___________________________________________________________________________________________________________________________________________
+
+** Data binding **
+
+* Data binding allow apps to display data values to a user and respond to user actions (such as clicks, touches, and keystrokes).
+
+* Ways of data binding in Angular:
+* Interpolation - {{ }}.
+* Property binding - [ ].
+* Event binding - ( ).
+* Attribute binding.
+* Class binding - [class].
+* Style binding - [style].
+* Two-way data binding with ngModel - [(ngModel)].
+___________________________________________________________________________________________________________________________________________
+
+** @ngModule() **
+
+* declarations: [ ] - components and pipes of this module are declared.
+* imports: [ ] - We can import dependant modules.
+* exports: [ ] - Place the components.
+* providers: [ ] - Services are registered here.
+* bootstrap: [ ] - Root component is placed in this.
+
+___________________________________________________________________________________________________________________________________________
+
+** Providers **
+- A provider is an instruction to the DI system on how to obtain a value for a dependency. Most of the time, these dependencies are services that you create and provide.
+
+___________________________________________________________________________________________________________________________________________
+
+** Services **
+
+* Services can be registered at any two levels (in providers: []): module level and component level. 
+
+___________________________________________________________________________________________________________________________________________
+
+** Lazy loading **
+
+* Lazy loading speeds up application load time by splitting the application into multiple bundles and loading them on demand.
 
 ___________________________________________________________________________________________________________________________________________
