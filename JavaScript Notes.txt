@@ -1,0 +1,463 @@
+
+* JavaScript is a: 
+1. Interpreted programming language.
+2. Loosely-typed programming language. (Data type of a variable need not be declared and it can be changed later).
+3. Prototype-based programming language.
+4. Single-threaded programming language.
+
+- window is the global object.
+
+- "this" is reference to an object. It represents the current context. 
+
+- JS objects have properties and methods. Both are in key-value pairs.
+
+- typeof [] returns object.
+- typeof myFunc returns function.
+- "typeof undefined" returns undefined.
+- "typeof null" returns object.
+- "typeof NaN" returns number.
+
+* Output of:
+if("") {
+console.log("hello world");
+}
+
+* One can access object properties in two ways: 
+- objectName.propertyName - dot notation.
+- objectName["propertyName"] - bracket notation.
+
+* Prototype:
+- All JavaScript objects inherit properties and methods from a prototype.
+- Array objects inherit from Array.prototype.
+- The Object.prototype is on the top of the prototype inheritance chain.
+- Array objects inherit from Object.prototype too.
+
+* Prototype: It allows the JS objects to inherit features from one another.
+
+* Prototype chain.
+
+* Prototypal Inheritance.
+- Every JS object inherits from its prototype.
+- Every JS object has own properties and inherited properties.
+
+* String.prototype.split():
+- It can be called on a string.
+- It returns an array.
+- If the separator is "", the returned array will be an array of single characters.
+- If there is no separator, the returned array will contain the whole string in index [0].
+
+* for/of loop Vs for/in loop (when iterated on an array):
+- currentItem Vs index
+
+* Removing the duplicates from an array. Hint: use indexOf().
+
+* Merge sub-arrays into an array:
+- "arr" has sub-arrays.
+- [].concat.apply([], arr);
+
+- myFunc()()();
+
+* duplicate([1,4,7,3,5]); should return a new duplicate array. 
+
+* var: function scope Vs  let: block scope
+
+- In functions, local variables have higher priority than global variables.
+
+* Global variable: 
+- Declared outside any function.
+- Declared without "var" inside a function.
+- All undeclared variables are global variables.
+
+- Scope inside setTimeout() function is global scope (window object).
+
+* Serialize: JSON.stringify() - converts a JS object into a string.
+
+* Deserialize: JSON.parse() - converts a string into a JS object.
+
+- A function returns "undefined" by default.
+
+* Array.prototype.reduce(): Adds all the items in an array (Reduces to a single value).
+
+* IIFE (Immediately Invoked Function Expression): self invoked function.
+
+* Rest parameters:  It represents an indefinite number of arguments as an array (...args). 
+- args is an array.
+- arguments is an array-like object.
+
+*Destructuring Assignment: Unpacks values from an array or properties from an object.
+
+* JavaScript objects can be created by:
+- Object literals.
+- "new" keyword (constructor). Constructor function.
+- new Object().
+- Object.create(). It also allows you to choose the prototype object for the object you want to create.
+
+* Comparision of objects:
+- Two distinct objects are never equal, even if they have the same properties.
+- If two objects refer to the same object, then they are equal.
+- We can use Object.is() method to determine if two objects are equal.
+
+- Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+
+- "prototype" property is used to add new properties / methods to an object constructor.
+
+- The "constructor" method is a special method for creating and initializing an object created with a class.
+
+- A constructor can use super() to call the constructor of the super class.
+
+- The super keyword is used to call corresponding methods of super class.
+
+- If there is a constructor present in subclass, it needs to first call super() before using "this".
+
+
+- The bodies of class declarations and class expressions are executed in strict mode, by default.
+
+- Static methods can only be called on classes, not on instances of the classes.
+
+- A getter is a method that gets the value of a specific property. 
+
+- A setter is a method that sets the value of a specific property.
+
+- The getter method must not expect a parameter. 
+
+- The setter method expects exactly one parameter.
+
+* forEach() vs. map():
+
+- Array.prototype.forEach(): Doesn't return anything.
+
+- Array.prototype.map(): Returns a new array.
+
+- forEach() transforms the current array, whereas map() doesn't.
+
+* Synchronous vs. Asynchronous.
+- Blocking vs. Non-Blocking.
+
+* Function declaration vs. Function expression.
+- Parse time vs. Run time.
+
+* Function Expressions:
+- Named.
+- Anonymous.
+
+* Object.is() method determines whether two values are the same value.
+
+* Object.assign() method creates a copy of an object.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** HTML DOM **
+
+
+- With the HTML DOM, JavaScript can access and change the elements of an HTML document.
+- All the HTML elements are objects.
+- It has methods (eg. getElementById() ) and properties (eg. innerHTML).
+- "document" object is the owner of all the objects.
+- "document" object represents the web page.
+- "html" is the root element.
+
+___________________________________________________________________________________________________________________________________________
+
+** ES 6 Features **
+
+- let and const.
+- Template literals.
+- Multi-line strings.
+- Arrow functions.
+- Default parameters.
+- Rest parameters.
+- Destructuring assignment.
+- Classes.
+- Modules.
+- Enhanced object literals.
+- Promises.
+- for/of loop.
+- Generators.
+- Map and Set.
+- Symbol data type.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** Arrow functions **
+
+
+- don't have lexical scope ( they take the outer scope ).
+- don't have "arguments" parameter.
+
+
+___________________________________________________________________________________________________________________________________________
+
+** Events in JS **
+
+
+* There are three ways to assign event handlers:
+1. HTML Attributes. eg. onclick="".
+2. DOM Property. eg. elem.onclick = function.
+3. addEventListener("eventName", function, useCapture).
+
+- Using 2nd way, multiple handlers can't be given.
+- Using 3rd way, multiple handlers can be given.
+- In all the three ways, event (object) is the first argument in the handler.
+
+* addEventListener():
+- It supports objects as event handlers.
+- Its third parameter of addEventListener() is a boolean value specifying whether to use event bubbling or event capturing.
+- You can specify the propagation type by using the "useCapture" parameter ( 3rd parameter ). 
+* useCapture - The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.
+
+* There are 3 phases in event propogation:
+1. Capturing phase - the event goes down to the element (only addEventListener handlers are executed on the way).
+2. Target phase - the event reached the target element.
+3. Bubbling phase - the event bubbles up from the element (all the handlers are executed on the way).
+
+* Event Bubbling: 
+- When an event occurs on an element, it first runs the handlers on it, then on its parent and then all the way up on other ancestors.
+
+* Event Delegation: If we have a lot of elements handled in a similar way, then instead of assigning handlers to each of them, we put a     		single handler on their common ancestor.
+
+** Properties of Event object:
+
+* event.target: The target element that initiated the event (the deepest element).
+
+* event.currentTarget: The current element.
+
+** Methods of Event object:
+
+* event.stopPropogation(): Prevents further propagation of an event through the DOM.
+
+* event.stopImmediatePropogation(): To stop event bubbling and prevent any other handlers from executing.
+
+* event.preventDefault(): Cancels an event if it is cancelable.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** Data Types in JS **
+
+- There are 6 data types in JS.
+* Primitive Data Types: Number, String, Boolean Undefined and Null.
+* Derived Data Type: Object.
+- Primitive Data Types are immutable.
+- Derived Data Types ( Objects ) are mutable. 
+
+___________________________________________________________________________________________________________________________________________
+
+
+** Callback functions **
+
+
+* Higher-Order Function: A function that can take another function as an argument, or that returns a function as a result.
+
+* Callback function: A function that is passed to another function as a parameter.
+- It gets executed at some later time.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** Closures **
+
+
+- Inner function will have access to the variables in the outer function's scope even after the outer function has returned.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** call(), apply(), bind() methods**
+
+
+* Uses of call(), apply(), bind():
+- Set 'this' value explicitly while invoking the function.
+- Borrow methods.
+
+* Function Currying: Use of a function that returns a new function with some of the arguments already set.
+
+- bind() method allows us to curry a function.
+
+- bind() method doesn't call the function.
+
+* Difference between call() and apply(): In apply(), the arguments can be passed as an array.
+
+- Variadic functions.
+
+- An array can be passed into apply() method.
+
+- Array-like objects. eg. arguments.
+
+___________________________________________________________________________________________________________________________________________
+
+
+** Hoisting **
+
+
+* Definition: JS moves all the declarations to the top of the current scope.
+
+- Variable declarations and Function declarations get hoisted. 
+
+- Variable initializations, Function expressions, Class declarations and Class expressions don't get hoisted. 
+
+- Variable assignments takes precedence over function declarations.
+
+- Function declarations take precedence over variable declarations.
+
+___________________________________________________________________________________________________________________________________________
+
+** ES 6 Promises **
+
+
+* Promise: A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+- A promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
+
+* A Promise can be in any one of the following states:
+1. Fulfilled.
+2. Rejected and
+3. Pending.
+
+- new Promise(function(resolve, reject) { ... } );
+
+- Callbacks will never be called before the completion.
+
+- Multiple callbacks may be added by calling .then several times.
+
+- then() method attaches callbacks for the resolution and/or rejection of the promise.
+
+- then(onFulfilled? value => return Promise, onRejected? reason => return Promise).
+- onFulfilled is a callback function that gets executed when the promise is fulfilled.
+- onRejected is a callback function that gets executed when the promise is rejected.
+
+- then() method returns a promise.
+
+* Promise chain - Chaining is the biggest advantage of promises.
+
+- catch(failureCallback) is short for then(null, failureCallback).
+
+___________________________________________________________________________________________________________________________________________
+
+** == vs. === **
+
+
+- Strict equality operator aka Identity operator aka Triple equals (===) compares both the value and the type of the operands.
+
+- Loose equality operator aka Double equals (==) compares only the value of the operands.
+
+- Type Coercion takes place in double equals operator. The types of the operands get converted to common types.
+
+___________________________________________________________________________________________________________________________________________
+
+* Rules of loose equality operator (==):
+
+1. false, 0 and "" get coerced into boolean false.
+- false == 0 returns true.
+- false == "" returns true.
+
+2. "undefined" and "null" are equal in value but different in type.
+- undefined == null 
+returns true.
+
+- undefined === null returns 
+false.
+
+3. NaN is not equal to anything, including NaN.
+- NaN == NaN and NaN === NaN return false.
+
+* Difference between undefined and null: With default parameters, undefined uses the default values, whereas null doesn't.
+
+* The only falsy values in JS are:
+1. false.
+2. 0.
+3. undefined.
+4. null.
+5. "" (empty string) and
+6. NaN.
+
+___________________________________________________________________________________________________________________________________________
+
+** AJAX **
+
+- Used to update a web page asynchronously without reloading the page.
+- Establishes communication between Client (Browser) and Server.
+- Requests/Sends the data from/to a web server.
+
+* Advantages:
+- No reloading.
+
+* Disadvantages:
+- The back and refresh button are rendered useless.
+
+___________________________________________________________________________________________________________________________________________
+
+** "use strict" **
+
+- This directive defines that JavaScript code should be executed in "strict mode".
+
+* Advantages:
+- Every variable must be declared.
+- Throws an error when assigning values to read-only properties.
+
+___________________________________________________________________________________________________________________________________________
+
+** Concurrency Model **
+
+
+* Event Table: This table keeps track of events. If the event gets fired, the handler function will be sent to the Event Queue.
+
+* Message Queue aka Event Queue aka Task Queue: It stores the order in which the functions are to be executed.
+
+* Call Stack: The function that is about to get executed, gets pushed into this stack.
+
+* Event Loop: It is the constantly running process of adding the functions from Event Queue to the Call Stack.
+
+___________________________________________________________________________________________________________________________________________
+
+** Pure function **
+
+- It is a function that returns the same output for the given input.
+- It doesn't transform the passed argument.
+- Its return value depends solely on the values of its parameters.
+- Its arguments should be considered "immutable", meaning they should not be changed.
+- Calling a pure function with the same set of arguments will always return the same value.
+- No side-effects.
+- Eg. Array.prototype.concat().
+
+* Benefits of pure functions:
+- Easier to test, maintain and debug.
+
+___________________________________________________________________________________________________________________________________________
+
+** Array.prototype methods **
+
+* Array.prototype.slice(): 
+- The slice() method returns a portion of an array into a new array. It returns the new array.
+Eg. arr.slice(1, 5).
+
+* Array.prototype.splice(): 
+- The splice() method changes the array by removing existing elements and/or adding new elements. It returns the array containing the deleted elements. 
+Eg. arr.splice(1, 4, "hello").
+
+* Array.prototype.shift():
+- The shift() method removes the first element from an array and returns that removed element.
+Eg. arr.shift().
+
+* Array.prototype.unshift():
+- The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array. 
+Eg. arr.unshift(4, 5).
+
+* Array.prototype.filter():
+- The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+Eg,. words.filter(word => word.length > 6).
+
+* Array.prototype.find():
+- The find() method returns the value of the first element in the array that satisfies the provided testing function.
+Eg,. words.find(word => word.length > 6).
+
+* Array.prototype.join():
+- The join() method joins all elements of an array (or an array-like object) into a string and returns this string.
+
+* Array.prototype.forEach():
+* Array.prototype.map():
+* Array.prototype.reduce():
+
+
+___________________________________________________________________________________________________________________________________________
