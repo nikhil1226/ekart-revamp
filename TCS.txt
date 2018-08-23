@@ -1,0 +1,18 @@
+* Differences between AngularJS and Angular?
+* Differences between Angular and React?
+* What is virtual DOM?
+* What is JSX?
+* What are lifecycle hooks in react?
+* Where to put API calls in react?
+* How to make API calls in react?
+* Difference between get() method and post() method?
+* Which version of react have you used?
+* What is react's context API?
+* What are inheritance and composition?
+* What is flex layout in CSS?
+* What is a closure?
+* What is the difference between a normal function and a arrow function?
+* What is the difference between let and const keyword?
+* What is a singleton class?
+* What is dependency injection?
+

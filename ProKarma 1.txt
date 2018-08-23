@@ -1,0 +1,47 @@
+*** Prokarma Technical Round-1 Interview Questions ***
+
+
+** HTML ** 
+- What is the use of <!DOCTYPE>?
+- New features in HTML 5?
+- What are localStorage and sessionStorage?
+- How did you encrypt the password in your application?
+
+
+** CSS **
+- What is the difference between display: none and visibility: hidden?
+- What is the difference between position: relative and position: absolute?
+- What are pseudo classes in CSS? 
+- What is Box model?
+- What is padding?
+- What is margin?
+
+
+** JavaScript **
+- How to create an object in JS?
+- Object.create(Person.prototype) vs. new Person().
+- What is the difference between new keyword and Object.create()?
+- How to get the count of keys in an object?
+- What is event bubbling?
+- How to stop event bubbling?
+- What is the difference between stopPropogation() and stopImmediatePropogation()? 
+- How to cancel the event's default action?
+- What is a closure?
+- What is hoisting?
+- What is prototype?
+- What is prototypal inheritance?
+- What is the difference between let and var?
+- How Array.prototype.splice() works?
+- What is a callback function?
+- How do we add event handlers dynamically?
+
+
+** Angular **
+- What is lazy loading and how to acheive it?
+- What is the difference between forRoot() and forChild()?
+- What are the differences between AngularJS and Angular?
+- What is Dependency Injection in Angular?
+- What are the differences between Promises and Observables?
+- How the component communication works in Angular?
+- What is loadChildren?
+

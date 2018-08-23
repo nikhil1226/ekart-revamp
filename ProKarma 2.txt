@@ -1,0 +1,17 @@
+*** ProKarma Technical Round - 2 Interview Questions ***
+
+- Explain prototypal inheritance in detail and write the example program.
+- What is the difference between prototype and __proto__?
+- What is the use of prototype property?
+- Explain about the Object.create() method.
+- List down all the new features of ES 6.
+- What is the difference between normal function and arrow function?
+- Explain and write a program of closure?
+- Where do we use closures?
+- What was the code coverage in your previous application?
+- Which framework you've used for testing?
+- Explain and write a program for call() method.
+- What is the difference between call() method and apply() method?
+- What are the advantages of Promises?
+- Explain the component lifecycle of ReactJS.
+- Draw and explain the architecture of Redux.

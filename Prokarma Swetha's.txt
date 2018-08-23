@@ -1,0 +1,75 @@
+Prokarma first round Interview questions
+Bootstrap
+•	Bootstrap grid system
+•	Components(modals, tooltips)
+•	Media queries
+•	Meta tag
+•	Viewport
+•	How you write for portrait and landscape
+•	In media queries apart from min-width and max-width what can we give?
+
+Js questions
+•	Hoisting
+•	Var a = fun(){}, can I call a before declaring
+•	call(), apply(), bind()
+•	this keyword 
+ Ex: func a(){
+this.x=1;
+}//this will refer to?
+Var d = new a(); //this?
+•	Array methods – splice, slice, shift, unshift
+•	Prototype inheritance
+•	Spread and rest operator
+•	Closures
+•	ES6 features
+•	Template strings
+•	Diff b/w arrow func and normal funct.
+•	Diff b/w let, const, var
+•	Event propagation
+•	Event Delegation
+•	Strict mode
+
+Angular 2
+•	Life cycle hook methods
+•	Routing
+•	Diff b/w ngAfterViewInit and ngAfterContentInit
+•	Diff b/w services and providers
+•	Dependency Injection
+•	Decorators
+•	Modules
+•	How do you create app , components, modules using angular cli
+•	@ViewChild and @ContentChild difference.
+•	Knowledge on Angular 4,5,6
+•	Who bootstraps the application, what is platformBrowserDynamic().bootstrapModule()?
+•	Forms, Reactive and Template driven
+•	Lazy loading
+•	Angular cli commands
+
+Second round:
+•	Closures and lexical scope with example program
+•	Hoisting with example
+•	Will function expression hoists?
+•	Prototype and __proto__
+•	Diff b/w call, apply, bind
+•	Array ,methods difference b/w splice and slice with examples? Asked me syntax with example?
+•	Why we use angular cli
+•	What is the use of bundle.js?
+•	In angular project folder we will have one file which will solve cross browser issues what is the file name? answer: polyfills
+•	Directives in ur project in which scenario u used *ngIf and *ngFor? What are this directives?
+•	Decorators u know?
+•	React life cycle methods,
+•	Why Redux?
+•	componentWillUnmount() when this will execute? Who will call this?
+•	Did you use promises? What are they?
+•	ComponentWillReceiveProps syntax?
+•	Bootstrap grid system?
+•	How will u design for desktop and mobile?
+•	Es6 features
+•	Diff b/w let,var,const with example
+•	Diff b/w normal func and arrow funct?
+•	Template string with example
+•	Spread n rest operator with example
+•	How many ways u can create objects
+•	This keyword in normal function and closure
+
+

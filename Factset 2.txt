@@ -1,0 +1,18 @@
+* Write a JS program to sort an array of numbers? Explain its working also.
+* Write a JS program to find the count of duplicate elements of an array?
+* Hoisting in JS.
+* Inheritance in JS.
+* What's the difference between service and factory?
+* What is the use of self invoking function?
+* How two controllers can communicate (if those controllers have parent-child relationship)?
+* Event propogation? What happens when we click on an element?
+* Custom directives?
+* One-way data binding in AngularJS?
+* Can padding contain negative values?
+* What are various position values in CSS?
+* What should be the position of parent when the child's position is relative?
+* What is CSS box model?
+* What are block level elements?
+* How to center the content in a web page?
+* What is the left and margin-left?
+* Difference between width: 100% width: auto?

@@ -1,0 +1,8 @@
+* Write JS program to remove duplicate elements in an array without using any prototype method.
+* Write JS program to find the duplicate elements in an array.
+* What is the difference between export and module.exports?
+* How to clone an object?
+* What's the difference between <article> and <section> tags?
+* What are CSS combinators?
+* What is the difference between export and module.exports?
+* How components communicate in angular?

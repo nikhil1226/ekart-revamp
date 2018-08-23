@@ -1,0 +1,18 @@
+﻿** Capgemini Interview Questions **
+Tell me about yourself.
+Explain your current project.
+What are the features of angular?
+How to make http calls in angular? Write and explain the program.
+How to make multiple API calls parallely?
+What are the differences between a promise and an observable?
+What is lazy loading?
+What are the differences between angular 2 and angular 4?
+How to make an angular application secure?
+What are the lifecycle hooks in angular? Write and explain each of them.
+What is the difference between scope and rootscope in angular?
+How to handle session timeout in angular?
+What is the difference between a component and a directive?
+Which database was used in your angular project?
+How quickly can you learn Ionic and are you willing to work on Ionic?
+How long have you worked on angular project?
+

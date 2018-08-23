@@ -1,0 +1,13 @@
+* What is the order of precedence in CSS?
+* What are CSS selectors?
+* What is CSS specificity?
+* What are CSS positions?
+* How to give background color to a div element using JS?
+* How to give background color to multiple div elements using JS?
+* How to handle events in JS?
+* What is event bubbling?
+* What is event capturing?
+* How to stop event propagation?
+* How a react component gets updated?
+* How to initialize the state of a react component?
+

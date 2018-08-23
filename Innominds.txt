@@ -1,0 +1,37 @@
+** Innominds Interview Questions**
+
+** Technical Round - 1 **
+* How to pass data from one route to another route without using route parameters? 
+* How to make save button disabled if there is any change in any of the form fields?
+* Search box on a table.
+* angular.forEach().
+* How to write mixins in LESS?
+* How to connect NodeJS to MongoDB?
+* How to establish communication between two controllers?
+* What are the differences between Angular and React?
+* How to achieve one-way data binding in AngularJS 1.6?
+* What is the difference between display: none and visibility: hidden?
+* What happens when an event occurs?
+* What are the new features in CSS 3?
+* What are the new features in HTML 5?
+* What does event.stopPropagation() do?
+* What does event.preventDefault() do?
+* Which is a must code to be present before using media queries?
+
+** Technical Round - 2 **
+* What is a pure component?
+* What is Virtual DOM?
+* What is a container component?
+* What are the differences between Angular and React?
+* Explain the component lifecycle in React?
+* What are the lifecycle hooks in React?
+* What does combineReducers() method do?
+* What is the difference between inline binding and binding in constructor?
+* 1 Bulb and 3 Switches puzzle.
+
+
+** Technical Round - 3 **
+* How to hide an image in mobile viewport, but show that image in desktop viewport using bootstrap?
+* How good are you at programming?
+* Write a JavaScript program to print pyramid of stars.
+* How many matches will be played if there are 6 teams in the tournament?

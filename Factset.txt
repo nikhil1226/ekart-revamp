@@ -1,0 +1,19 @@
+* What is the difference between == and === operators? Explain with an example.
+* What is the output of 2+"3"?
+* What is the output of 2-"1"?
+* What is the output of 2/"2"?
+* What is the output of "a"-"b"?
+* What are the falsy values in JS?
+* What is a closure?
+* Practical questions on Hoisting.
+* What is function hoisting?
+* What is inheritane in JS?
+* How is abstraction acheived in JS?
+* What are different scopes in JS?
+* What is the difference between a directive and a component?
+* What is the use of a self invoking function?
+* What is the difference between size and lenght properties of array?
+* What are call(), apply() and bind() methods?
+* What is an anonymous function?
+* What are the ways to create an object?
+* What is the difference between let and const keywords?

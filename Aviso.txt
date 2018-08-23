@@ -1,0 +1,11 @@
+** Aviso Telephonic Interview Questions **
+
+* Tell me about yourself.
+* Explain your current project.
+* What is Redux?
+* What is the difference between a service and a factory?
+* Write a JS program to get the count of duplicate elements of an array.
+* How to make multiple API calls sequentially and parallely?
+* What is Promise.all() method?
+* What exactly happens in the backround when forkJoin() operator is called?
+

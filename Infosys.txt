@@ -1,0 +1,6 @@
+* Explain your current project.
+* What is web storage in HTML 5?
+* What is redux?
+* How uni-directional data flow is a useful feature?
+* How to hide an element using CSS?
+
