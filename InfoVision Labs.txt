@@ -1,7 +1,0 @@
-** InfoVision Labs Interview Questions **
-
-* What is Virtual DOM?
-* What are the differences between Angular and React?
-* How you handled session timeout in React?
-* How JSX is transpiled into JavaScript?
-* How ES 6 is transpiled into ES 5?
