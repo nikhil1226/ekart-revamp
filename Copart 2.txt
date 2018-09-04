@@ -1,5 +1,0 @@
-
-* What is the use of call(), apply() and bind() methods?
-* What is session storage used for? 
-* How to make API calls parallely?
-* Car.make("Renault").model("Duster").print(); Write code so that it prints Renault Duster.
